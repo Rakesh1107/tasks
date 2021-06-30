@@ -1,4 +1,5 @@
-Tasks:-
+Programs:-
+
 1. Write a Java program to find the index of an array element. (numeric array) 
 2. Write a Java program to sum values of a numeric array. 
 3. Write a Java program to remove a specific element from an array. 
