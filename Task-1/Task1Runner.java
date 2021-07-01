@@ -29,7 +29,7 @@ public class Task1Runner {
 					String[] inputs2 = input2.split(" ");
 					for(int i = 0; i < len2; i++)
 						arr2[i] = Integer.parseInt(inputs2[i]);
-					CommonValueFinder.findValues(arr1, arr2);
+					CommonValueFinder.findCommonValues(arr1, arr2);
 				} 
 				else if(opt == 'b') {
 					String[] arr1 = new String[len1];
@@ -40,7 +40,7 @@ public class Task1Runner {
 					System.out.println("Enter the elements of array 2: ");
 					for(int i = 0; i < len2; i++)
 						arr2[i] = br.readLine();
-					CommonValueFinder.findValues(arr1, arr2);
+					CommonValueFinder.findCommonValues(arr1, arr2);
 				}
 			} 
 			else {
