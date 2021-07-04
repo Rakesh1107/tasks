@@ -1,18 +1,18 @@
 
 public class ArraySorter {
 	public static void sortArray(Integer[] arr) {
-		boolean swapped;
+		boolean sorted;
 		for(int i = 0; i < arr.length-1; i++) {
-			swapped = false;
-			for(int j = i+1; j < arr.length; j++) {
-				if(arr[i] > arr[j]) {
-					int temp = arr[i];
-					arr[i] = arr[j];
-					arr[j] = temp;
-					swapped = true;
+			sorted = true;
+			for(int j = 0; j < arr.length-1-i; j++) {
+				if(arr[j] > arr[j+1]) {
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+					sorted = false;
 				}
 			}
-			if(swapped == false) break;
+			if(sorted) break;
 		}
 		System.out.println("Sorted Array: " + Arrays.asList(arr));
 	}
